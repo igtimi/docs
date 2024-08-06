@@ -1,11 +1,11 @@
 ---
-title: "Transporting TideBot"
+title: Transporting TideBot
 date: 2021-08-18
 ---
+
 # Transporting TideBot
 
-Storage
--------
+## Storage
 
 <img src="../../../assets/images/blob1447029797597.png" alt=""  height="383px" />
 

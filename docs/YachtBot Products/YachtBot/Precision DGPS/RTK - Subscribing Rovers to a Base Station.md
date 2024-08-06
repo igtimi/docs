@@ -1,7 +1,8 @@
 ---
-title: "Precision DGPS/RTK - Subscribing Rovers to a Base Station"
+title: Precision DGPS/RTK - Subscribing Rovers to a Base Station
 date: 2021-08-18
 ---
+
 # Precision DGPS/RTK - Subscribing Rovers to a Base Station
 
 How to subscribe to a YachtBot base station
@@ -12,7 +13,7 @@ In the config, set this to the base station’s serial number
 
 \## CORS
 
-##
+## 
 
 #log debug cors on
 

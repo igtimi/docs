@@ -1,10 +1,11 @@
 ---
-title: "WindBot World Magnetic Model (WMM) Update"
+title: WindBot World Magnetic Model (WMM) Update
 date: 2021-08-18
 ---
+
 # WindBot World Magnetic Model (WMM) Update
 
-              Every 5 years, [NOAA release](https://www.ngdc.noaa.gov/geomag/WMM/soft.shtml) a new WMM (World Magnetic Model) that WindBot devices use to calculate the [earths magnetic declination](https://en.wikipedia.org/wiki/Magnetic_declination).  
+Every 5 years, [NOAA release](https://www.ngdc.noaa.gov/geomag/WMM/soft.shtml) a new WMM (World Magnetic Model) that WindBot devices use to calculate the [earths magnetic declination](https://en.wikipedia.org/wiki/Magnetic_declination).
 
 On 10 December, NOAA released WMM2020 which replaces WMM2015 that has been distributed with WindBot firmware.  WindBot devices will **only use a WMM that has not expired**, and so to ensure that your device continues to operate past 31 December 2019 you will need to copy the updated WMM2020 to your device.
 

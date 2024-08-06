@@ -1,5 +1,5 @@
 ---
-title: "Using the IMU/AHRS with YachtBot"
+title: Using the IMU/AHRS with YachtBot
 date: 2021-08-18
 ---
 
@@ -42,13 +42,13 @@ First order Euler angle offsets can be set using the
 
 command, and can account for any fixed offset errors due to remaining zero offsets in the orientation  estimation, or due to mounting alignments. Note that a first order correction is only suitable for small corrections. Where large mounting errors are present, post-processing rotation of the orientation estimation is recommended. Note that the Euler angle orientation estimation outputs with non-orthogonal mounting are still valid,  but the parameters no longer map directly to the physical properties expected of Pitch/Roll/Yaw. See [Yachtbot Mounting options](../../../assets/images/8012265358.pdf)
 
-### Drift and zeroing of the reference frame 
+### Drift and zeroing of the reference frame
 
 YachtBot estimates reference vectors that define the orientation of the earth frame. These reference vectors are determined at power-up and continuously corrected. To
 
 ensure that the reference vectors are correctly determined, it's important that YachtBot should be powered up while stationary.
 
-### Magnetic declination 
+### Magnetic declination
 
 Orientation is measured relative to magnetic north. The angle between magnetic north and true north is called magnetic declination. Where yaw/heading needs to be
 
@@ -56,7 +56,7 @@ referenced to true north, using NOAA's empirical declination model is recommend.
 
 [http://www.ngdc.noaa.gov/geomag/geomag.shtml](http://www.ngdc.noaa.gov/geomag/geomag.shtml)
 
-### Live Data 
+### Live Data
 
 Magnetic heading (HDGM) is transmitted live to the YachtBot server directly using the Yaw field from the Euler angle output. To enable HDGM output in YachtBot, Euler
 
@@ -68,9 +68,9 @@ recommended to set the Euler angle message rate at the same rate as, or multiple
 
 which would set the eular rate to that of the IMU.
 
-### Logfile 
+### Logfile
 
-AHRS data is logged to <Stream_ID>.IMU.NMA. The Steam ID is a monotonically increasing number which is incremented each power cycle.
+AHRS data is logged to \<Stream_ID>.IMU.NMA. The Steam ID is a monotonically increasing number which is incremented each power cycle.
 
 An example of the logfile is;
 
@@ -85,19 +85,19 @@ $PIIMU,25250,0x1,-5.9,-138.8,0.1,\*20 
 
 The fields are;
 
-|  $PGSNC                  | Header indicating Proprietary GNSS SyNC message |
+| $PGSNC                   | Header indicating Proprietary GNSS SyNC message |
 | ------------------------ | ----------------------------------------------- |
-| 24391                    | System timer in milliseconds                    |
-| 2013-11-28T21:40:57.886Z | ISO8601 timestamp                               |
-| DC-DK-AADK               | Device Serial number                            |
-| 0xa2                     | Device Stream ID, in hex                        |
+| 24391                    | System timer in milliseconds                    |
+| 2013-11-28T21:40:57.886Z | ISO8601 timestamp                               |
+| DC-DK-AADK               | Device Serial number                            |
+| 0xa2                     | Device Stream ID, in hex                        |
 | \*71                     | NMEA compliant CRC                              |
 
 <table border="1" cellpadding="0" cellspacing="0" id="table12496"><tbody style="font-size: 13px;"><tr style="font-size: 13px;"><td><span style="font-weight: normal; font-size: 13px; font-family: sans-serif, Arial, Verdana, 'Trebuchet MS';">$PIIMU</span><br></td><td><span style="font-weight: normal; font-size: 13px; font-family: sans-serif, Arial, Verdana, 'Trebuchet MS';">Header indicating Proprietary Inertial message from an IMU&nbsp;</span><br></td></tr><tr style="font-size: 13px;"><td><span style="font-weight: normal; font-size: 13px; font-family: sans-serif, Arial, Verdana, 'Trebuchet MS';">24390</span><br></td><td><p class="current"><span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS';">System timer in milliseconds&nbsp;</span></p></td></tr><tr><td>&nbsp;<span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; line-height: 18px;">0x1</span></td><td><span class="current" style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; line-height: 18px;">Message identifier (Euler angles)</span></td></tr><tr><td>&nbsp;<span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; line-height: 18px;">-6.0</span></td><td><span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; line-height: 18px;">Pitch</span></td></tr><tr><td>&nbsp;<span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; line-height: 18px;">-139.1</span></td><td>&nbsp;<span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; line-height: 18px;">Yaw</span></td></tr><tr><td>&nbsp;<span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; line-height: 18px;">-0.2</span></td><td>&nbsp;<span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; line-height: 18px;">Roll</span></td></tr><tr><td>&nbsp;</td><td>&nbsp;<span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; line-height: 18px;">Blank field to assist CSV processing</span></td></tr><tr><td>&nbsp;<span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; line-height: 18px;">*00</span></td><td class="current">&nbsp;<span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; line-height: 18px;">NMEA compliant CRC</span></td></tr></tbody></table>
 
 For detail on the message types, values, field order and sign conventions, see the appendices below.
 
-# Configuration 
+# Configuration
 
 The following is a typical configuration block for the AHRS. Note that the term IMU is used to reference configuration of the AHRS system in the configuration.
 
@@ -124,7 +124,7 @@ _set and the unit is expected to be mounted in the DECK orientation with the bac
 
 Note that the order that some of the commands are issued is important. AXES and START commands must come after ON.
 
-## Commands 
+## Commands
 
 Arguments in square brackets are optional. A forward slash inside square brackets means "or".
 
@@ -176,7 +176,7 @@ For IMU logfile sync see [Synchronisation mode](../../YachtBot%20Products/YachtB
 >
 > ○ Gyro; rad/s
 
-## Appendix: Signs 
+## Appendix: Signs
 
 The following table outlines the sign conventions where IMU data is used.
 
@@ -194,6 +194,6 @@ on the YachtBot serial output
 
 Denotes fields where the natural sign has been reversed to match NMEA standards
 
-## Appendix: Data types 
+## Appendix: Data types
 
 <table border="1" cellpadding="0" cellspacing="0" id="table74076"><tbody><tr><td><span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; font-size: 13px;"><strong>Type</strong></span><br></td><td><span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; font-size: 13px;"><strong>Description&nbsp;</strong></span><br></td><td><span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; font-size: 13px;"><strong>Message identifier</strong></span><br></td></tr><tr><td><span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; font-size: 13px; font-weight: normal;">Euler</span><br></td><td><span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; font-size: 13px; font-weight: normal;">Orientation as Euler angles</span><br></td><td><span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS';">0x1</span><br></td></tr><tr><td><span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; font-size: 13px; font-weight: normal;">Quaternion</span><br></td><td><span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; font-size: 13px; font-weight: normal;">Orientation as Quaternions</span><br></td><td><span class="current" style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS';">0x0</span><br></td></tr><tr><td><span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; font-size: 13px; font-weight: normal;">Linearg</span><br></td><td>Raw (oversampled) linear accelerometer data</td><td><span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; font-size: 13px; font-weight: normal;">0x27</span><br></td></tr><tr><td><span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; font-size: 13px; font-weight: normal;">Linear</span><br></td><td>As above, without component of gravity</td><td><span class="current" style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS';">0x29</span><br></td></tr><tr><td><span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; font-size: 13px; font-weight: normal;">Gyro</span><br></td><td><span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; font-size: 13px; font-weight: normal;">Raw gyro data</span><br></td><td><span style="font-family: sans-serif, Arial, Verdana, 'Trebuchet MS'; font-size: 13px; font-weight: normal;">0x26</span><br></td></tr></tbody></table>
