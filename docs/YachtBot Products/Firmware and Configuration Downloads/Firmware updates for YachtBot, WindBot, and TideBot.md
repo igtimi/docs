@@ -73,13 +73,13 @@ Should a firmware update fail for any reason, then YachtBot will lock on with th
 The latest firmware 
 --------------------
 
-*   [YachtBot](https://support.yacht-bot.com/helpdesk/attachments/8112580412) (Version 2.2.531 : 17 April 2023)[](https://yachtbot.freshdesk.com/helpdesk/attachments/8048946772)
-*   [WindBot](https://support.yacht-bot.com/helpdesk/attachments/8112580398) (Version 2.2.531 :17 April 2023)
-*   [TideBot](https://support.yacht-bot.com/helpdesk/attachments/8039434681) (Build 511)
+*   [YachtBot](../../assets/firmware/yachtbot-540.zip) (Version 2.2.540 - 02 August 2024)
+*   [WindBot](../../assets/firmware/windbot-540.zip) (Version 2.2.540 - 02 August 2024)
+*   [TideBot](../../assets/firmware/tidebot-511.zip) (Build 511)
 
   
 
 Changelog
 ---------
 
-    For information about what has changed in this release, please refer to the [Changelog.txt](https://support.yacht-bot.com/helpdesk/attachments/8112580486) file attached below.
+    For information about what has changed in this release, please refer to the [Changelog.txt](../../assets/firmware/Changelog.txt) file attached below.

@@ -12,7 +12,9 @@ The following are instructions for installing Turn Analyser which can be found a
 
   
 
-If you haven't already downloaded and install python from [https://www.python.org/downloads/](https://www.python.org/downloads/). This program was developed and tested using [python version 3.5.2](https://www.python.org/downloads/release/python-352/) and therefore this is the recommended version to download and install. When installing python remember to check the option to install python into the PATH.<img src="../../../assets/images/xMt8nCHj3IUZ9VfBnd1LRiobzfUQRkgvRA.jpg" alt="" width="421px" height="260.919px" />
+If you haven't already downloaded and install python from [https://www.python.org/downloads/](https://www.python.org/downloads/). This program was developed and tested using [python version 3.5.2](https://www.python.org/downloads/release/python-352/) and therefore this is the recommended version to download and install. When installing python remember to check the option to install python into the PATH.
+
+<img src="../../../assets/images/xMt8nCHj3IUZ9VfBnd1LRiobzfUQRkgvRA.jpg" alt="" width="421px" height="260.919px" />
 
   
 
@@ -26,7 +28,7 @@ Once python is installed, open command prompt and type the following:
 
 The command prompt can either be opened via the start menu or by holding shift and using right-click > "Open command window here".
 
-<table style="width: 100%;"><tbody><tr><td style="width: 50.0000%;"><img class="fr-dib fr-draggable" src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/8017751292/original/gNs9qE3P0YCxTK9A_4Z7pKOdKZY9YogRRA.jpg?1490674593" data-filelink="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/8017751292/original/gNs9qE3P0YCxTK9A_4Z7pKOdKZY9YogRRA.jpg?1490674593" data-fileid="8017751292" data-uniquekey="1490674519379" style="width: 145px; height: 218.291px;"></td><td style="width: 50.0000%;"><img class="fr-dib fr-draggable" src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/8017751296/original/2WPfE064fYfAG9r6bXPBjyB8x0ApSi5VzQ.png?1490674610" data-filelink="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/8017751296/original/2WPfE064fYfAG9r6bXPBjyB8x0ApSi5VzQ.png?1490674610" data-fileid="8017751296" data-uniquekey="1490674519379" style="width: 418px; height: 220.4px;"></td></tr></tbody></table>
+<table style="width: 100%;"><tbody><tr><td style="width: 50.0000%;"><img src="../../../assets/images/gNs9qE3P0YCxTK9A_4Z7pKOdKZY9YogRRA.jpg?1490674593" style="max-width: 145px;"></td><td style="width: 50.0000%;"><img src="../../../assets/images/2WPfE064fYfAG9r6bXPBjyB8x0ApSi5VzQ.png?1490674610" style="max-width: 418px;1"></td></tr></tbody></table>
 
   
 

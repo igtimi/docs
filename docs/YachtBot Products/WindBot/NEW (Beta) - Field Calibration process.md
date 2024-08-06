@@ -15,9 +15,7 @@ Please read this full page before you undertake this process.  This process req
 
   
 
-Ensure that you are running firmware version Build 512 (Published 9 May 2019) or greater before using the process detailed in the article.  The latest firmware can be found here...
-
-[http://support.yacht-bot.com/solution/articles/8000004686-firmware-updates-for-yachtbot-windbot-and-tidebot](../../YachtBot%20Products/Firmware%20and%20Configuration%20Downloads/Firmware%20updates%20for%20YachtBot,%20WindBot,%20and%20TideBot.md)
+Ensure that you are running firmware version Build 512 (Published 9 May 2019) or greater before using the process detailed in the article.  The latest firmware [can be found here](../../YachtBot%20Products/Firmware%20and%20Configuration%20Downloads/Firmware%20updates%20for%20YachtBot,%20WindBot,%20and%20TideBot.md).
 
   
 
@@ -25,7 +23,7 @@ Ensure that you are running firmware version Build 512 (Published 9 May 2019) or
 
 <img src="../../../assets/images/m8ABaMU-fpsSGNlde67laR4YG7KEoRDsUA.png" alt="" width="323px" />
 
-1.  Plug the WindBot brain into a computer using the USB cable.  Backup your existing config.ini file and copy the calibration config.ini from [here](https://yachtbot.freshdesk.com/helpdesk/attachments/8049102090).
+1.  Plug the WindBot brain into a computer using the USB cable.  Backup your existing config.ini file and copy the calibration config.ini from [here](config.ini).
 2.  Take just the two top sections of the WindBot off your boat. In an outside space away from all metallic objects, lash the middle section of the pole against something to securely keep the poles vertical without any wobble.  If you have multiple poles, use the Pole that the WindBot brain is normally attached to.
 3.  Please take a photo of this process so we can confirm that there are no interfering objects nearby.
 4.  Tape or role the Velcro between the poles out of the way.

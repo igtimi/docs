@@ -1,0 +1,182 @@
+----------------------
+Version 2.2.540 : 2024-08-02
+----------------------
+  - Feature: Allow customizing riot server address
+  - Improve memory management
+  - Changed: Disable ANT+ on Windbot due to firmware size limitations
+  - Changed: Disable TDMA due to firmware size limitations
+----------------------
+Version 2.2.527 : 2022-05-09
+----------------------
+  - Feature: CORS re-enabled
+----------------------
+Version 2.2 : 2022-04-29
+----------------------
+  - Feature: Server connection changed to RIoT
+  - Feature: Support for new Bluetooth data connection protocols (pb)
+  - Feature: NMEA processing for XDR, DPT, and RSA messages
+  - Deprecated: Bluetooth HFP support
+  - Changed: Payload log file changed from .BIF to .IPB with new format
+  - Warning: CORS disabled in this version
+----------------------
+Build 519 : 2021-07-06
+----------------------
+  - Feature: Added a build disabling cell communication + data logging for the Olympics.
+             Cell light flashes 2x every 5 seconds when this is enabled.
+----------------------
+Build 517 : 2021-06-30
+----------------------
+  - Feature: Support for improved wind averaging
+----------------------
+Build 516 : 2020-10-20
+----------------------
+  - Feature: Better powered wired support
+----------------------
+Build 515 : 2019-12-06
+----------------------
+  - Feature: Support for further LTE modems
+  - Bug: Cell reconnection issue 
+----------------------
+Build 514 : 2019-09-06
+----------------------
+  - Bug: Cell reconnection issue
+  - Bug: LTE modem power up state handling
+----------------------
+----------------------
+Build 513 : 2019-06-14
+----------------------
+  - Feature: Add LTE modem support
+----------------------
+Build 512 : 2019-05-08
+----------------------
+  - Feature: Magnetometer data can be logged from the IMU
+  - Feature: Dynamic support for different BT AUTH modes
+  - Bug: BT connect errors causing erroneous logging
+----------------------
+Build 511 : 2018-09-14
+----------------------
+  - Feature: 50Hz GPS support for Precision Pro devices
+  - Feature: Increased support for tablet displays
+----------------------
+Build 510 : 2018-08-02
+----------------------
+  - Bug Fix: SBAS configuration fix
+----------------------
+Build 509 : 2018-07-25
+----------------------
+  - Feature: Device commands are now available via Bluetooth
+----------------------
+Build 506 : 2018-06-13
+----------------------
+  - Feature: IMU and HRM information available via NMEA messages for YachtBot Display
+----------------------
+Build 504 : 2018-01-22
+----------------------
+  - Feature: Battery level information available via NMEA messages
+----------------------
+Build 503 : 2017-12-14
+----------------------
+  - Feature: Improved cellular connection logging
+  - Maintenance: Bluetooth engine
+----------------------
+Build 502 : 2017-12-05
+----------------------
+  - Feature: ANT device (HRM & Cadence) can now log to the sensor log
+  - Feature: Remote commands via YachtBot Dashboard
+  - Feature: Support custom user APN list (_assets/apns-user.xml)
+  - Feature: NAV TW (ON)/OFF command
+----------------------
+Build 501 : 2017-10-10
+----------------------
+  - Fixed timestamping of files
+  - Removed unused field in sensor log
+----------------------
+Build 500 : 2017-10-05
+----------------------
+  - Feature: Unified sensor logging
+  - Feature: Custom Bluetooth names
+  - Feature: Support more Bluetooth authentication modes
+  - Feature: Support uBlox M8P RTK base and rover modules
+  - Feature: Support MB-Two GPS module
+  - Feature: Autoconfiguration of MB-One/Two GPS modules
+  - Feature: Support MB-One/Two dual antenna GPS heading
+  - Feature: Increased GPS numerical precision for RTK applications
+  - Feature: Support GPS altitude
+  - Feature: Set filter and reference modes of IMU
+  - Feature: POWER WIRED and UPS modes for fixed installations
+  - Increased accuracy of IMU calibration 
+  - Increased accuracy of GPS time synchronisation in sensor logs
+  - Updated USB/FS drivers and middleware
+  - Updated APN file
+  - Fixed cellular low voltage start-up hang
+  - Major IMU stability improvements
+  - Added catch for EEPROM failure
+  - Various bug fixes, stability, and performance improvements
+----------------------
+Build 417 : 2016-09-30
+----------------------
+  - Feature: Recorded audio data synchronises on shutdown
+  - Improved charge light behaviour
+  - TideBot display formatting tweaks
+  - Various bugfixes and stability improvements
+----------------------
+Build 414 : 2016-07-15
+----------------------
+  - Feature: Bluetooth serial output enabled for NMEA
+  - Feature: Bluetooth audio now supports recording from "TalkBot" 
+  - Feature: IMU can now send real-time data, and synchronise
+  - Feature: Real time clock drift adjustment using GPS PPS
+  - Feature: 4x button taps recalibrates the IMU Gyro (use only under direction)
+  - Feature: Prefetch and Data aborts handled and logged with automatic reboot
+  - Feature: GPS auto-configuration
+  - Feature: LED's all blink if config.ini unavailable or contains syntax errors (see log for detail)
+  - Feature: APN for cellular connection is now automatic
+  - Feature: Speaker can now play any audio file
+  - Speed over 100kt handled
+  - Various bugfixes and stability improvements
+  - Various Logging improvements
+----------------------
+Build 406 : 2015-11-27
+----------------------
+  - Sync moves files to "synced" folder when complete (if not deleting)
+  - TideBot display formatting tweaks
+  - "Monitor" feature released
+  - NMEA output now meets V2.3 specification 
+----------------------
+Build 403 : 2015-10-27
+----------------------
+  - GPS DELAY <X> OVERRIDE option added - single tap wakes up GPS (Case 1937)
+  - WIND LOGTYPE [RAW/TIMED] configuration option added
+  - Synchronisation engine V2 available (multiple file types, live sync)
+  - Improvements and fixes to Cell engine, declination calcs, system logging
+----------------------
+Build 395 : 2015-07-01
+----------------------
+  - Silence spurious logging for WCT module (Case 1889)
+  - Minor fixes to CORS, Cell, Bluetooth Audio and Declination calcs
+----------------------
+Build 393 : 2015-05-18
+----------------------
+  - Add WMM2015 declination calculations for TW calculation
+  - Handle unexpected IMU errors
+----------------------
+Build 392 : 2015-05-08
+----------------------
+  - Handle oversize commands via payloads
+----------------------
+Build 391 : 2015-05-06
+----------------------
+  - Add support for Bike Cadence to ANT+ profiles
+----------------------
+Build 385 : 2015-03-15
+----------------------
+  - Implement GoBot (event reporting) feature
+  - Implement correction services = CORS (DGPS + RTK base/rover)
+----------------------
+Build 383 : 2015-02-26
+----------------------
+  - Improve IMU logfile output
+  - Add IMU commands for changing oversample and averaging settings
+  - Implement improved calibration routines
+  - Add WCT (water current) demo mode
+  - Add control for Magnetic or True fields in NMEA output

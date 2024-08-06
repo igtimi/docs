@@ -145,6 +145,4 @@ Scroll down the page until you see the lists of objects contained in the race se
 
 Click on the 'Export' button beside the relevant object list to export the objects to file. 
 
-More detail can be found in this article...
-
-[http://support.yacht-bot.com/support/solutions/articles/8000063250-exporting-to-data-a-csv-file](../../YachtBot%20Web/Race%20Editor/Exporting%20to%20a%20CSV%20file.md)
+More detail can be found [in this article](../../YachtBot%20Web/Race%20Editor/Exporting%20to%20a%20CSV%20file.md).

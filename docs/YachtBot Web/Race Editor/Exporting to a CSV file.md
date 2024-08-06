@@ -39,9 +39,7 @@ and imports into excel like this...
 
   
 
-These CSV files can be used to make a new race by using the import CSV described here...
-
-[http://support.yacht-bot.com/support/solutions/articles/8000050310-load-race-competitors-and-race-marks-from-file](../../YachtBot%20Web/Race%20Editor/Load%20race%20competitors%20and%20race%20marks%20from%20file.md)
+These CSV files can be used to make a new race by using [the import CSV described here](../../YachtBot%20Web/Race%20Editor/Load%20race%20competitors%20and%20race%20marks%20from%20file.md).
 
   
 
