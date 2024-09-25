@@ -1,19 +1,11 @@
 # Igtimi Documentation
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Documentation for Igtimi Products
 
-## Commands
+**The Igtimi web platform will be shut down on the 31st of December 2024.**
 
-- `mkdocs new [dir-name]` - Create a new project.
-- `mkdocs serve` - Start the live-reloading docs server.
-- `mkdocs build` - Build the documentation site.
-- `mkdocs -h` - Print help message and exit.
+To keep using your Windbot and Yachtbot devices please install Firmware 2.2.540 or greater and set up your own data server.
 
-## Project layout
+For Firmware downloads see [Downloads](./YachtBot Products/Firmware and Configuration Downloads/Firmware updates for YachtBot%2C WindBot%2C and TideBot/)
 
-```
-mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-```
+For an example server and documentation on the device protocol see [https://github.com/igtimi/go-igtimi](https://github.com/igtimi/go-igtimi)

@@ -12,9 +12,8 @@ date: 2023-04-19
 - **Firmware updates MUST be done on a **Windows or Linux PC -** NOT Apple devices.**
 - **Updating an incorrect firmware image to a device risks damaging the device.  Please follow instructions carefully as no warranty can be provided for failed firmware updates.**
 
-Important - April 2022 update and beyond
+### Important - April 2022 update and beyond
 
-______________________________________________________________________
 
 - **Updates to version 2.2 (published April 2022) or higher MUST NEVER be downgraded to version 2.1 (build 519) or earlier.**
   - **Attempts to downgrade devices WILL [BRICK](<https://en.wikipedia.org/wiki/Brick_(electronics)>) THE DEVICE; these will need to be returned for service, and incur charges to recover.**
@@ -59,8 +58,8 @@ Should a firmware update fail for any reason, then YachtBot will lock on with th
 
 ## The latest firmware
 
-- [YachtBot](../../assets/firmware/yachtbot-540.zip) (Version 2.2.540 - 02 August 2024)
-- [WindBot](../../assets/firmware/windbot-540.zip) (Version 2.2.540 - 02 August 2024)
+- YachtBot (Version 2.2.540 - 02 August 2024) **Link available soon**
+- WindBot (Version 2.2.540 - 02 August 2024) **Link available soon**
 - [TideBot](../../assets/firmware/tidebot-511.zip) (Build 511)
 
 ## Changelog
