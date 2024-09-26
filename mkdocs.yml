@@ -1,2 +1,18 @@
 site_name: Igtimi Documentation
-theme: readthedocs
+theme: 
+  name: readthedocs
+  hljs_languages:
+    - protobuf
+site_url: https://support.yacht-bot.com
+repo_url: https://github.com/igtimi/docs
+edit_uri: edit/main/docs/
+
+plugins:
+  - search
+  - awesome-pages
+
+markdown_extensions:
+  - fenced_code
+
+not_in_nav: |
+  /Custom Projects

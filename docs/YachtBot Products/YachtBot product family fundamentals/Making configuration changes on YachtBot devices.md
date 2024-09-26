@@ -26,7 +26,7 @@ To make config changes;
 
 - The SD card must be formatted as FAT32, and the configuration file must be named "config.ini".
 
-- Default config files are provided with the [latest firmware](../../YachtBot%20Products/Firmware%20and%20Configuration%20Downloads/Firmware%20updates%20for%20YachtBot,%20WindBot,%20and%20TideBot.md) in an archive (ZIP format) file.  These archives contain other files or folders in addition to the config.ini file, which must also be copied to the SD card.
+- Default config files are provided with the [latest firmware](/YachtBot%20Products/Firmware%20Updates/) in an archive (ZIP format) file.  These archives contain other files or folders in addition to the config.ini file, which must also be copied to the SD card.
 
 - When updating firmware, always start with a fresh default config as supplied in the config archive file with the firmware, then make customisations.
 
@@ -38,4 +38,4 @@ To make config changes;
 
 ## Latest and greatest
 
-The latest config files can be found in the config archive file with the [latest firmware](../../YachtBot%20Products/Firmware%20and%20Configuration%20Downloads/Firmware%20updates%20for%20YachtBot,%20WindBot,%20and%20TideBot.md).
+The latest config files can be found in the config archive file with the [latest firmware](/YachtBot%20Products/Firmware%20Updates).

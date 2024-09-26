@@ -28,7 +28,7 @@ command. The argument describes the surface of the object that the rear surface 
 # Raw kinematic data
 
 Linear acceleration and gyro information may be logged. Linear acceleration can be logged with, or without the static gravity vector included. This is not affected by the mounting option and will use the natural axis of the IMU. For details about the natural axis refer to the attached pdf on mounting options:
-[Yachtbot Mounting options](../../../assets/images/8012265358.pdf)
+[Yachtbot Mounting options](../../assets/images/YB%20IMU%20Orientation.PNG)
 
 ## Calibration and accuracy
 
@@ -40,7 +40,7 @@ First order Euler angle offsets can be set using the
 
 `IMU PYR`
 
-command, and can account for any fixed offset errors due to remaining zero offsets in the orientation  estimation, or due to mounting alignments. Note that a first order correction is only suitable for small corrections. Where large mounting errors are present, post-processing rotation of the orientation estimation is recommended. Note that the Euler angle orientation estimation outputs with non-orthogonal mounting are still valid,  but the parameters no longer map directly to the physical properties expected of Pitch/Roll/Yaw. See [Yachtbot Mounting options](../../../assets/images/8012265358.pdf)
+command, and can account for any fixed offset errors due to remaining zero offsets in the orientation  estimation, or due to mounting alignments. Note that a first order correction is only suitable for small corrections. Where large mounting errors are present, post-processing rotation of the orientation estimation is recommended. Note that the Euler angle orientation estimation outputs with non-orthogonal mounting are still valid,  but the parameters no longer map directly to the physical properties expected of Pitch/Roll/Yaw. See [Yachtbot Mounting options](../../assets/images/YB%20IMU%20Orientation.PNG)
 
 ### Drift and zeroing of the reference frame
 

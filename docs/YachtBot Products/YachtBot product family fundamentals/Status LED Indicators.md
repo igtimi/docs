@@ -9,7 +9,7 @@ There are three status indicators on the YachtBot, TideBot, and WindBot and five
 
 The top indicator is the "Power Indicator" (red), then second the "Server Connection", "GPS (Global Position System) Connection", "Bluetooth Connection" (Bio Only), and "ANT+ Connection" (Bio Only).
 
-<img src="../../../assets/images/blob1446589582215.png" alt=""  height="613px" />
+<img src="../../assets/images/blob1446589582215.png" alt=""  height="613px" />
 
 ## Power Indicator
 

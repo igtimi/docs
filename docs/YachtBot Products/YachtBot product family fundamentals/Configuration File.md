@@ -23,3 +23,5 @@ Other settings can be changed, but we'd rather tell you how to do it (and find o
 - Change the update rate
 
 The article on [Configuration for YachtBot devices](../../YachtBot%20Products/YachtBot%20product%20family%20fundamentals/Making%20configuration%20changes%20on%20YachtBot%20devices.md) takes you through all necessary steps to make changes to the config.ini and has default files for your use.
+
+For a comprehensive list of all the settings that can be changed in the config.ini file, see the [Yachtbot Commands](https://igtimi.github.io/yachtbot-docs/modules.html).

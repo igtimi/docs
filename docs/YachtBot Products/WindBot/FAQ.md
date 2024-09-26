@@ -5,13 +5,13 @@ date: 2021-08-18
 
 # FAQ
 
-**What is the best way to mount WindBot?**
+#### What is the best way to mount WindBot?
 
 WindBot is sensitive to location on your boat. Because the True Wind calculation depends on the GPS location, any **magnetic** disturbances can influence this measurement. In practice, this means that when used on a RIB, WindBot needs to be mounted as far away from the motor as possible.
 
 How to tell if WindBot is mounted incorrectly? If you can see boat movement data in your wind measurements, then your mounting location is likely incorrect. Contact us with photographs of the boat you wish to mount WindBot on and we’ll advise of best location.
 
-**What do the power light blips mean?**
+#### What do the power light blips mean?
 
 There are some helpful error codes that are displayed by the power light indicator, which will flash to indicate an error.
 
@@ -19,21 +19,21 @@ There are some helpful error codes that are displayed by the power light indicat
 
 Hierarchy: Codes with higher numbers trump those with lower numbers.
 
-**When I try to turn the WindBot brain on by pressing the power button, the red light flashes but turns off when I let go of the button. The unit never powers up.**
+#### When I try to turn the WindBot brain on by pressing the power button, the red light flashes but turns off when I let go of the button. The unit never powers up.
 
 Your device cannot find a firmware and is therefore not booting up. See our support website for the latest firmware updates and instructions.
 
-**How do I power WindBot from boat power?**
+#### How do I power WindBot from boat power?
 
 The WindBot can be powered from boat power using a power cable that connects the boat's battery to the pigtail on the windpole. If powering the WindBot system from boat power, typically via a display (old Nanuk displays), always start your engine before turning on the WindBot system.
 
 **Important!** When powered off boat power, WindBot can drain your boat’s battery. Always turn the display off, then turn off WindBot brain before mooring for the night. If data sync is enabled (see below), WindBot brain will not shut down immediately.
 
-**How can I check the fidelity of wind measurements?**
+#### How can I check the fidelity of wind measurements?
 
 On a boat, with a steady onshore wind, test the device by driving a square shaped pattern in sufficient wind, aiming for the heading to change by about 90 degrees while the wind value remains the same (within a few degrees).
 
-**I don't have a display, how can I troubleshoot WindBot?**
+#### I don't have a display, how can I troubleshoot WindBot?
 
 After registering the device and inserting a SIM card, create a LIVE race on ww.yacht-bot.com.
 
@@ -45,7 +45,7 @@ Required equipment:
 
 Now continue with the tests as described in [Dry and Wet troubleshooting tips](http://support.yacht-bot.com/a/solutions/).
 
-**How do I attach the wind sensor?**
+#### How do I attach the wind sensor?
 
 The sensor typically arrives attached to the top section of the pole. Unless absolutely required, we recommend never removing it.
 

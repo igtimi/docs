@@ -1,0 +1,4 @@
+order_by: title
+nav: 
+    - Getting started.md
+    - ...

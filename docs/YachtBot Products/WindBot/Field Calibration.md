@@ -1,9 +1,9 @@
 ---
-title: NEW (Beta) - Field Calibration process
+title: Field Calibration process
 date: 2021-08-18
 ---
 
-# NEW (Beta) - Field Calibration process
+# Field Calibration process
 
 **WARNING:**  \
 **Field calibration of the WindBot pole is a new process that is currently being developed and refined.  Please only undertake this process in consultation with Igtimi and YachtBot staff.  Before starting please ensure you have emailed info@igtimi.com.**

@@ -11,7 +11,7 @@ YachtBot, WindBot and TideBot require the SD card to be inserted to operate. The
 
 Ensure the device is turned off.  Attach the device to a computer and wait for 3 seconds.  The device will automatically turn on, and mount onto your computer like a USB key.  All \*.log files, \*.MNA files are stored on the SD card and can be deleted or copied from the SD card.
 
-The SD card needs to contains the config.ini file and \_assets folder to ensure correct functioning and operation of your device.   Go to the [Firmware Downloads](../../YachtBot%20Products/Firmware%20and%20Configuration%20Downloads/Firmware%20updates%20for%20YachtBot,%20WindBot,%20and%20TideBot.md) section to get the latest files and firmware for your device.
+The SD card needs to contains the config.ini file and \_assets folder to ensure correct functioning and operation of your device.   Go to the [Firmware Downloads](/YachtBot%20Products/Firmware%20Updates) section to get the latest files and firmware for your device.
 
 If the SD card needs replaced, the direction to insert is indicated on the case of the device. Preferably use the supplied SD card, as only high quality SD cards function fully with YachtBot products.
 

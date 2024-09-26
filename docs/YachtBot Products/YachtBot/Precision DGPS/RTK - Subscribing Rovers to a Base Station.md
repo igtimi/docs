@@ -11,10 +11,7 @@ In the next section, the YachtBot base station is introduced. Receiving correcti
 
 In the config, set this to the base station’s serial number
 
-\## CORS
-
-## 
-
+```
 #log debug cors on
 
 CORS ROVER
@@ -22,3 +19,4 @@ CORS ROVER
 CORS SOURCE DC-FE-AAAA
 
 CORS ON
+```
