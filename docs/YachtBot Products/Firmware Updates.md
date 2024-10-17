@@ -50,8 +50,11 @@ Should a firmware update fail for any reason, then YachtBot will lock on with th
 
 ## The latest firmware
 
-- YachtBot (Version 2.2.540 - 02 August 2024) **Link available soon**
-- WindBot (Version 2.2.540 - 02 August 2024) **Link available soon**
+To receive the latest firmware update, please [sign our updated Terms of Use here](https://riedel.eu2.adobesign.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhCQSUyjBORtudyaXs3CYCYJRBipEbdLGvmwF6tUWfF8_Htrj2QUON1maIfdrk96MGk*).
+You will receive an email with links to the latest firmware download.
+
+- YachtBot (Version 2.2.540 - 02 August 2024)
+- WindBot (Version 2.2.540 - 02 August 2024)
 - [TideBot](../assets/firmware/tidebot-511.zip) (Build 511)
 
 ## Changelog
