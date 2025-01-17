@@ -50,7 +50,7 @@ Should a firmware update fail for any reason, then YachtBot will lock on with th
 
 ## The latest firmware
 
-To receive the latest firmware update, please [sign our updated Terms of Use here](https://riedel.eu2.adobesign.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhCQSUyjBORtudyaXs3CYCYJRBipEbdLGvmwF6tUWfF8_Htrj2QUON1maIfdrk96MGk*).
+To receive the latest firmware update, please [sign our updated Terms of Use here](https://riedelcommunications.eu2.adobesign.com/public/esignWidget?wid=CBFCIBAA3AAABLblqZhD0aSXDVXAXlhUPD2YKEciFlDNnwTWVGT6IxkH3kEGQuTh4CIpULQAM-CWI1fVcTQk*).
 You will receive an email with links to the latest firmware download.
 
 - YachtBot (Version 2.2.540 - 02 August 2024)
