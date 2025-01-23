@@ -9,19 +9,12 @@ date: 2023-04-19
 - **Updating an incorrect firmware image to a device risks damaging the device.  Please follow instructions carefully as no warranty can be provided for failed firmware updates.**
 - **Updates to version 2.2 (published April 2022) or higher MUST NEVER be downgraded to version 2.1 (build 519) or earlier.**
   - **Attempts to downgrade devices WILL [BRICK](<https://en.wikipedia.org/wiki/Brick_(electronics)>) THE DEVICE; these will need to be returned for service, and incur charges to recover.**
-- **Devices running version 2.1 (build 519 or earlier) will no longer be able to connect for cellular services from 27 May 2022.**
-- **After updating to version 2.2, devices must be connected by cellular at least once before data logging will be enabled.**
-
-## Deprecated features
-
-- **Version 2.2**: BIF format files have been replaced with IPB files.  BIF files are no longer supported for device sync or upload to the YachtBot website through the dashboard.
-- **Version 2.2**: BT HFP support in YachtBot Bio is no longer available.  Audio files can still be recorded in earlier builds and uploaded through the YachtBot website.
 
 ## Firmware update process
 
 1. Download and unzip firmware using the links at the bottom of this document.  Be sure to match the firmware image with the device type being updated.
 1. Remove the water-proof plug from the bottom of the device and plug a micro-USB cable into the Micro-USB socket.  For TideBot users, remove the bottom lid of the pod for access to the USB port.
-1. Plug the other end of the USB cable into a Microsoft Windows or Linux computer (not Apple Mac). Observe the device power light come on.
+1. Plug the other end of the USB cable into a Microsoft Windows (not Apple Mac or Linux). Observe the device power light come on.
 1. **Within two seconds, give the power button a short press**. All lights start flashing and the device will mount as a USB removable drive as follows:<img src="../../../assets/images/blob1445395397518.jpeg" alt=""  />
 1. In the mounted drive, delete the file called firmware.bin.
 1. Drag and drop, or copy and paste, the new firmware image onto the removable drive.  The firmware image is the file ending with the extension ".bin" previously extracted from the firmware zip file.

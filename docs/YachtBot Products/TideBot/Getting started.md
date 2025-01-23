@@ -31,8 +31,6 @@ To charge your device, remove the e-pod from the flotation tube, and unscrew the
 
 To install the SIM card in your device, with the lid removed, insert the SIM card in the right slot, on the base of the e-pod.
 
-With your device ready to go, head over to [www.yacht-bot.com](http://www.yacht-bot.com/) to register your device, using the device serial and tag identifiers located on the bottom of the device. This step is required for you to see live data on the YachtBot website.
-
 ### Powering on TideBot
 
 With a full view of the sky, hold the magnet over the power button for 3 seconds to turn on TideBot. With the magnet over the power button, the power indicator lights up followed by a couple of beeps sort beeps. Release the magnet after the unit beeps. The power indicator remains on solid and the lower indicator lights start flashing.

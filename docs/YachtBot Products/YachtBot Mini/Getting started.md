@@ -32,8 +32,6 @@ To install the SIM card in your device open the unit with the supplied screw dri
 
 <img src="../../../assets/images/CmTzbLa8Bnmj1Wa0g6vj6ZFDkN1DuNswvA.JPG" alt="" width="559px" />
 
-With your device ready to go, head over to [www.yacht-bot.com](http://www.yacht-bot.com/) to register your device, using the device serial and tag identifiers located on the back of the device. This step is required for you to see live data on the YachtBot website.
-
 ### Powering on YachtBot Mini
 
 With a full view of the sky, push the power button on the left side of the YachtBot Mini until you hear a beep and feel a vibration. The device now looks for GPS signal (blue indicator) and checks the data connection (green indicator). For YachtBot to recognize the 2G YachtBot Mini, both indicators must flash and then turn off. With the 3G YachtBot Mini, both indicators flash in unison every three seconds.

@@ -39,11 +39,9 @@ With your device charged, and SIM card installed, re-install the waterproofing b
 
 <img src="../../../assets/images/QFJBzzaD1mUr0xbjatyESU5k-6CQ9xkJMw.JPG" alt="" width="319px" height="329.374px" />
 
-With your device ready to go, head over to [www.yacht-bot.com](http://www.yacht-bot.com/) to register your device, using the device serial and tag identifiers located on the back of the device. This step is required for you to see live data on the YachtBot website.
-
 ### Powering on YachtBot
 
-To turn on your YachtBot, head outside, with a full view of the sky and push the power button on the YachtBot until you hear two beeps and see the 2nd and 3rd LEDs flash. The device is now looking for GPS signal and checking the data connection. For the YachtBot website to recognize the YachtBot, both indicators must flash while connecting and then go solid when successfully connected.
+To turn on your YachtBot, head outside, with a full view of the sky and push the power button on the YachtBot until you hear two beeps and see the 2nd and 3rd LEDs flash. The device is now looking for GPS signal and checking the data connection. For the data server to recognize the YachtBot, both indicators must flash while connecting and then go solid when successfully connected.
 
 ### Powering off YachtBot
 
