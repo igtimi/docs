@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://support.yacht-bot.com/YachtBot%20Products/YachtBot%20Mini/SIM%20card%20installation%20and%20APN/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>SIM card installation and APN - Igtimi Documentation</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "SIM card installation and APN";
+        var mkdocs_page_input_path = "YachtBot Products/YachtBot Mini/SIM card installation and APN.md";
+        var mkdocs_page_url = "/YachtBot%20Products/YachtBot%20Mini/SIM%20card%20installation%20and%20APN/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/protobuf.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> Igtimi Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">Igtimi Documentation</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">YachtBot Products</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../../">Index</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Firmware%20Updates/">Firmware Updates</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Riot%20Protocol/">RIoT Protocol documentation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deprecated articles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../Deprecated%20articles/Automatic%20magnetic%20inclination/">Automatic magnetic inclination</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Deprecated%20articles/Pigtail%20connector/">Pigtail connector</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../Deprecated%20articles/Removing%20YachtBot%27s%20bung/">Removing YachtBot's bung</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >TideBot</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../TideBot/Getting%20started/">Getting started</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../TideBot/FAQ/">FAQ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../TideBot/Water%20current%20measurements/">Water current measurements</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >WindBot</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../WindBot/Getting%20started/">Getting started</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../WindBot/Advanced%20Information/">Advanced Information</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../WindBot/FAQ/">FAQ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../WindBot/Field%20Calibration/">Field Calibration process</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../WindBot/World%20Magnetic%20Model%20Update/">WindBot World Magnetic Model (WMM) Update</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >YachtBot</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../YachtBot/Getting%20started/">Getting started</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../YachtBot/FAQ/">FAQ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Precision DGPS</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../../YachtBot/Precision%20DGPS/RTK%20-%20Base%20Station%20setup/">Precision DGPS/RTK - Base Station setup</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../../YachtBot/Precision%20DGPS/RTK%20-%20Subscribing%20Rovers%20to%20a%20Base%20Station/">Precision DGPS/RTK - Subscribing Rovers to a Base Station</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../YachtBot/YachtBot%20Bio%20-%20Using%20ANT%20devices/">YachtBot Bio - Using ANT devices</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../YachtBot/YachtBot%20Bio%20-%20Using%20Audio%20devices/">YachtBot Bio - Using Audio devices</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >YachtBot Mini</a>
+    <ul class="current">
+                <li class="toctree-l2"><a class="reference internal" href="../Getting%20started/">Getting started</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../APN%20Configuration/">APN Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Changing%20the%20battery/">Changing the battery</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Configuration%20via%20PC/">Configuration via PC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Enabling%20SOS%20functionality/">Enabling SOS functionality</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../FAQ/">FAQ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Identify%20device%20cellular%20frequencies%20/">Identify device cellular frequencies </a>
+                </li>
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">SIM card installation and APN</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#apn">APN</a>
+    </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >YachtBot product family fundamentals</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../YachtBot%20product%20family%20fundamentals/Cellular%20connectivity%20trouble%20shooting/">Cellular connectivity trouble shooting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../YachtBot%20product%20family%20fundamentals/Charging%20YachtBot%20and%20WindBot/">Charging YachtBot and WindBot</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../YachtBot%20product%20family%20fundamentals/Configuration%20File/">Configuration File</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../YachtBot%20product%20family%20fundamentals/GPS%20performance%20of%20YachtBot%20hardware/">GPS performance of YachtBot hardware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../YachtBot%20product%20family%20fundamentals/Making%20configuration%20changes%20on%20YachtBot%20devices/">Making configuration changes on YachtBot devices</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../YachtBot%20product%20family%20fundamentals/SD%20%28local%20memory%20storage%29%20and%20SIM%20cards/">SD (local memory storage) and SIM cards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../YachtBot%20product%20family%20fundamentals/SIM%20card%20APN%20settings%20for%20common%20providers/">SIM card APN settings for common providers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../YachtBot%20product%20family%20fundamentals/SIM%20data%20settings/">SIM data settings</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../YachtBot%20product%20family%20fundamentals/Status%20LED%20Indicators/">Status LED Indicators</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../YachtBot%20product%20family%20fundamentals/Synchronisation%20Mode/">Synchronisation Mode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../YachtBot%20product%20family%20fundamentals/The%20best%20place%20to%20install%20YachtBot%20on%20your%20sailing%20boat/">The best place to install YachtBot on your sailing boat</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../YachtBot%20product%20family%20fundamentals/Timed%20%22Sensor%22%20Log%20Files/">Timed "Sensor" Log Files</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../YachtBot%20product%20family%20fundamentals/Using%20the%20IMU%20-%20AHRS%20with%20YachtBot/">Using the IMU/AHRS with YachtBot</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">Igtimi Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">YachtBot Products</li>
+          <li class="breadcrumb-item">YachtBot Mini</li>
+      <li class="breadcrumb-item active">SIM card installation and APN</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/igtimi/docs/edit/main/docs/YachtBot Products/YachtBot Mini/SIM card installation and APN.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="sim-card-installation-and-apn">SIM card installation and APN</h1>
+<p>You need a SIM card with data plan: the maximum data usage per full charge cycle is about 3 MB. For the 2G version, you need a large form-factor (Mini), and for the 3G version, you need a Micro SIM.</p>
+<p>When fitting the SIM card, make sure that the contacts are aligned properly and take care to close metal clasp into the lock position. Problems with the SIM card reflect in a flashing green indicator (1s cycle).</p>
+<h2 id="apn">APN</h2>
+<p>In some countries, the APN user name and password needs to be set before data transmission works. Contact your cell phone provider and get the APN name, the user name, and password. Turn your YachtBot Mini on and send a text message to the SIM card’s number with</p>
+<p><code>0000,A21,1,data.igtimi.com,8000,APN,APN user name,APN password</code></p>
+<p>Replacing the last three values with the information your provider gave you. If, and this is common, no user name and password are required, the syntax is</p>
+<p><code>0000,A21,1,data.igtimi.com,8000,APN,,</code></p>
+<p>With the 3G version, you can send an abbreviated command that leaves the data connection details (TCP) alone:</p>
+<p><code>0000,A21,,,,APN,,</code></p>
+<p>That's four commas after A21!</p>
+<p><strong>IMPORTANT:</strong> When sending messages to your YachtBot Mini, use commas and don’t leave extra spaces.</p>
+<p>Within about 30 seconds, you receive a response ending in “A21,OK”, indicating that the new values have been set. Note that if your SIM card is not set up to send txt messages (data only or tablet SIM card), or charging when you sent it, then you won't receive this confirmation.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Identify%20device%20cellular%20frequencies%20/" class="btn btn-neutral float-left" title="Identify device cellular frequencies "><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../YachtBot%20product%20family%20fundamentals/Cellular%20connectivity%20trouble%20shooting/" class="btn btn-neutral float-right" title="Cellular connectivity trouble shooting">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/igtimi/docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../Identify%20device%20cellular%20frequencies%20/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../YachtBot%20product%20family%20fundamentals/Cellular%20connectivity%20trouble%20shooting/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

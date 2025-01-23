@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://support.yacht-bot.com/YachtBot%20Products/Riot%20Protocol/" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>RIoT Protocol documentation - Igtimi Documentation</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "RIoT Protocol documentation";
+        var mkdocs_page_input_path = "YachtBot Products/Riot Protocol.md";
+        var mkdocs_page_url = "/YachtBot%20Products/Riot%20Protocol/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/protobuf.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Igtimi Documentation
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Igtimi Documentation</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">YachtBot Products</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../">Index</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Firmware%20Updates/">Firmware Updates</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">RIoT Protocol documentation</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#connection">Connection</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#protocol-buffers">Protocol Buffers</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#message-types">Message Types</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#message-framing">Message framing</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#device-data-flow">Device data flow</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#channel-management">Channel Management</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#authentication">Authentication</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#tokens">Tokens</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#request">Request</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#response">Response</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#heartbeats">Heartbeats</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#data-format">Data Format</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#stream-ids">Stream IDs</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#type-of-service">Type of Service</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#source-ids-input-output">Source IDs (input / output)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#data-types">Data Types</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#gnss-position-pos">GNSS Position (pos)</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#other">Other</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Deprecated articles</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Deprecated%20articles/Automatic%20magnetic%20inclination/">Automatic magnetic inclination</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Deprecated%20articles/Pigtail%20connector/">Pigtail connector</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Deprecated%20articles/Removing%20YachtBot%27s%20bung/">Removing YachtBot's bung</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >TideBot</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../TideBot/Getting%20started/">Getting started</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TideBot/FAQ/">FAQ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../TideBot/Water%20current%20measurements/">Water current measurements</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >WindBot</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../WindBot/Getting%20started/">Getting started</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../WindBot/Advanced%20Information/">Advanced Information</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../WindBot/FAQ/">FAQ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../WindBot/Field%20Calibration/">Field Calibration process</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../WindBot/World%20Magnetic%20Model%20Update/">WindBot World Magnetic Model (WMM) Update</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >YachtBot</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot/Getting%20started/">Getting started</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot/FAQ/">FAQ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Precision DGPS</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../YachtBot/Precision%20DGPS/RTK%20-%20Base%20Station%20setup/">Precision DGPS/RTK - Base Station setup</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../YachtBot/Precision%20DGPS/RTK%20-%20Subscribing%20Rovers%20to%20a%20Base%20Station/">Precision DGPS/RTK - Subscribing Rovers to a Base Station</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot/YachtBot%20Bio%20-%20Using%20ANT%20devices/">YachtBot Bio - Using ANT devices</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot/YachtBot%20Bio%20-%20Using%20Audio%20devices/">YachtBot Bio - Using Audio devices</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >YachtBot Mini</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20Mini/Getting%20started/">Getting started</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20Mini/APN%20Configuration/">APN Configuration</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20Mini/Changing%20the%20battery/">Changing the battery</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20Mini/Configuration%20via%20PC/">Configuration via PC</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20Mini/Enabling%20SOS%20functionality/">Enabling SOS functionality</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20Mini/FAQ/">FAQ</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20Mini/Identify%20device%20cellular%20frequencies%20/">Identify device cellular frequencies </a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20Mini/SIM%20card%20installation%20and%20APN/">SIM card installation and APN</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >YachtBot product family fundamentals</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20product%20family%20fundamentals/Cellular%20connectivity%20trouble%20shooting/">Cellular connectivity trouble shooting</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20product%20family%20fundamentals/Charging%20YachtBot%20and%20WindBot/">Charging YachtBot and WindBot</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20product%20family%20fundamentals/Configuration%20File/">Configuration File</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20product%20family%20fundamentals/GPS%20performance%20of%20YachtBot%20hardware/">GPS performance of YachtBot hardware</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20product%20family%20fundamentals/Making%20configuration%20changes%20on%20YachtBot%20devices/">Making configuration changes on YachtBot devices</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20product%20family%20fundamentals/SD%20%28local%20memory%20storage%29%20and%20SIM%20cards/">SD (local memory storage) and SIM cards</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20product%20family%20fundamentals/SIM%20card%20APN%20settings%20for%20common%20providers/">SIM card APN settings for common providers</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20product%20family%20fundamentals/SIM%20data%20settings/">SIM data settings</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20product%20family%20fundamentals/Status%20LED%20Indicators/">Status LED Indicators</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20product%20family%20fundamentals/Synchronisation%20Mode/">Synchronisation Mode</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20product%20family%20fundamentals/The%20best%20place%20to%20install%20YachtBot%20on%20your%20sailing%20boat/">The best place to install YachtBot on your sailing boat</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20product%20family%20fundamentals/Timed%20%22Sensor%22%20Log%20Files/">Timed "Sensor" Log Files</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../YachtBot%20product%20family%20fundamentals/Using%20the%20IMU%20-%20AHRS%20with%20YachtBot/">Using the IMU/AHRS with YachtBot</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Igtimi Documentation</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">YachtBot Products</li>
+      <li class="breadcrumb-item active">RIoT Protocol documentation</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/igtimi/docs/edit/main/docs/YachtBot Products/Riot Protocol.md" class="icon icon-github"> Edit on GitHub</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="riot-protocol-documentation">RIoT Protocol documentation</h1>
+<p>Documentation of the RIoT protocol used by Yachtbot devices.</p>
+<p>The protocol definitions can be found on <a href="https://github.com/igtimi/go-igtimi/tree/main/proto/com/igtimi">Github</a>.</p>
+<p>If you want to develop your own server to handle yachtbot device data, you can use the <a href="https://github.com/igtimi/go-igtimi/tree/main">go-igtimi</a> example server is a starting point.</p>
+<h2 id="introduction">Introduction</h2>
+<h3 id="connection">Connection</h3>
+<p>The device connects to the server using a TCP connection. Usually port 6000 is used.</p>
+<h3 id="protocol-buffers">Protocol Buffers</h3>
+<p>The riot protocol is based on protocol buffers. Protocol Buffers were developed by Google as a “language-neutral, platform-neutral” mechanism for serializing structured data. The format is specified in .proto files, and libraries can be compiled for many common languages. For more information see the documentation at <a href="https://protobuf.dev/">https://protobuf.dev/</a>.</p>
+<h3 id="message-types">Message Types</h3>
+<p>All messages sent over connections to RIoT (in both directions) will conform to the format defined by the Msg message defined in IgtimiStream.proto, whose definition is seen in code snipped 1. There are three message types defined inside which have different purposes.</p>
+<ul>
+<li>
+<p>Channel Management is used to handle any tasks associated with managing the connection. This could include, but it not limited to Authentication, Data Subscription, etc.</p>
+</li>
+<li>
+<p>Data is used to send or receive data.</p>
+</li>
+<li>
+<p><em>[Unused]</em> Data Request is used to make an explicit request for a series of datapoints.</p>
+</li>
+</ul>
+<p>Any data that does not conform to the specification will not be understood and therefore will be dropped. We recommend using protocol buffers with supported libraries to ensure that the data is in the correct format.</p>
+<h3 id="message-framing">Message framing</h3>
+<p>As protocol buffers are not self-delimiting, we take the <a href="https://protobuf.dev/programming-guides/techniques/#streaming">"standard approach"</a> of writing a <a href="https://protobuf.dev/programming-guides/encoding/#varints">varint message length</a> before each message.</p>
+<p>The official Java and C++ libraries have support for this built in, and other languages may also.</p>
+<h2 id="device-data-flow">Device data flow</h2>
+<p>The standard flow for a device connecting to a RIoT server to insert data is as follows:</p>
+<ul>
+<li>Connect</li>
+<li>Authenticate using Device Group Token (see Authentication)</li>
+<li>Send data points</li>
+</ul>
+<p>Code Snippet 1 – Igtimi Stream message format (<a href="https://github.com/igtimi/go-igtimi/blob/main/proto/com/igtimi/IgtimiStream.proto">IgtimiStream.proto</a>)</p>
+<pre><code class="language-proto">message Msg {
+  oneof msg {
+    ChannelManagement channel_management = 1 [json_name = &quot;mgmt&quot;];
+    Data data = 2 [json_name = &quot;d&quot;];
+    AckResponse ack_response = 3 [json_name = &quot;ackResponse&quot;];
+    APIData api_data = 4 [json_name = &quot;apiData&quot;];
+    DeviceManagement device_management = 5 [json_name = &quot;deviceManagement&quot;];
+  }
+}
+</code></pre>
+<h3 id="channel-management">Channel Management</h3>
+<p>Channel management covers all the messages required to setup and maintain the connection between the client and the RIoT node.</p>
+<h3 id="authentication">Authentication</h3>
+<h4 id="tokens">Tokens</h4>
+<p>Igtimi uses two distinct types of tokens for authentication.</p>
+<h5 id="user-token">User token</h5>
+<p>A user token is a standard OAuth 2.0 token used to authenticate a user. A user token allows a client to subscribe or request data from the system. A user token also allows the client to insert data for a session. A client may authenticate only ONE user token at a time, meaning that attempting to authenticate a 2nd token will clear the first, and any data subscriptions will be lost (regardless of ACK or NAK).</p>
+<h5 id="device-group-token">Device Group Token</h5>
+<p>A device group token authenticates a client to insert data for a device or group of devices. A client may authenticate using multiple device group tokens by simply sending another authentication request.</p>
+<p>Code Snippet 2 – Token message format (<a href="https://github.com/igtimi/go-igtimi/blob/main/proto/com/igtimi/IgtimiAPI.proto#L382">IgtimiAPI.proto</a>)</p>
+<pre><code class="language-proto">message Token {
+  oneof token {
+    string user_token = 1 [json_name = &quot;userToken&quot;];
+    string device_group_token = 2 [json_name = &quot;deviceGroupToken&quot;];
+  }
+}
+</code></pre>
+<h4 id="request">Request</h4>
+<p>To authenticate a connection with RIoT a client should send an Authentication Request in the correct format, providing a token along with the current timestamp. The client should assume the connection is un-authenticated until a response indicating successful authentication is received.</p>
+<p>Code Snippet 3 – Authentication request message format (<a href="https://github.com/igtimi/go-igtimi/blob/main/proto/com/igtimi/IgtimiStream.proto#L65">IgtimiStream.proto</a>)</p>
+<pre><code class="language-proto">message AuthRequest {
+  uint64 timestamp = 1 [json_name = &quot;t&quot;];
+  Token token = 2 [json_name = &quot;token&quot;];
+}
+</code></pre>
+<h4 id="response">Response</h4>
+<p>For every authentication request there is a response. This response will indicate whether the request has been successful, along with both a machine and human readable reason. The response code is equivalent to a HTTP response code, therefore for a full list of codes and their meaning refer to the list maintained by the Internet Assigned Numbers Authority (IANA).</p>
+<p>Code Snippet 4 – Authentication response message format (<a href="https://github.com/igtimi/go-igtimi/blob/main/proto/com/igtimi/IgtimiStream.proto#L70">IgtimiStream.proto</a>)</p>
+<pre><code class="language-proto">message AuthResponse {
+  uint64 timestamp = 1 [json_name = &quot;t&quot;];
+  Token token = 2 [json_name = &quot;token&quot;];
+  bool ack = 3 [json_name = &quot;ack&quot;];
+  uint32 code = 4 [json_name = &quot;code&quot;];
+  string reason = 5 [json_name = &quot;reason&quot;];
+}
+</code></pre>
+<h3 id="heartbeats">Heartbeats</h3>
+<p>RIoT uses heartbeats to indicate that a connection is still active. The server sends a Channel Management heartbeat message every 15 seconds and expects to receive at least one message from the device every 30 seconds to keep the connection active. Inactive connections will be queued for disconnection.</p>
+<p>Yachtbot devices send a heartbeat message every 15 seconds and attempt to reconnect if no heartbeat messages have been received in 30 seconds.</p>
+<h3 id="data-format">Data Format</h3>
+<p>The different messages and data types are specified in <a href="https://github.com/igtimi/go-igtimi/blob/main/proto/com/igtimi/IgtimiData.proto">IgtimiData.proto</a></p>
+<pre><code class="language-proto">message DataMsg {
+  // required
+  repeated DataPoint data = 1 [json_name = &quot;data&quot;];
+
+  // not required (may be determinable from the connection)
+  oneof source {
+    string serial_number = 2 [json_name = &quot;serial&quot;];
+    uint32 session_id = 3 [json_name = &quot;session&quot;];
+  }
+
+  // not required (server should default to 3 when not set)
+  TypeOfService type_of_service = 4 [json_name = &quot;tos&quot;];
+
+  // not required (can be generated by the server)
+  uint32 stream_id = 5 [json_name = &quot;streamID&quot;];
+}
+</code></pre>
+<h4 id="stream-ids">Stream IDs</h4>
+<p>Way to group data into “windows” e.g. power cycle.</p>
+<h4 id="type-of-service">Type of Service</h4>
+<p>Bitfield. The Protocol Buffer schema specifies all options, so no bit operations are required.</p>
+<table>
+<thead>
+<tr>
+<th>Bit</th>
+<th>8</th>
+<th>7</th>
+<th>6</th>
+<th>5</th>
+<th>4</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Use</td>
+<td>Reserved for future use</td>
+<td>Ack</td>
+<td>Sync</td>
+<td>Update</td>
+<td>Persistent</td>
+<td>Live</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Rules:</p>
+<ul>
+<li>Must be either Live, Persistent or Both. Cannot be neither.</li>
+<li>If not set (0) default of 3 (Live + Persistent) will be applied.</li>
+</ul>
+<h4 id="source-ids-input-output">Source IDs (input / output)</h4>
+<ul>
+<li>
+<p>Allows data to be input from multiple sources (sensors) for the same device (e.g. dual GPS).</p>
+</li>
+<li>
+<p>For session data the source ID will equal the user id of the user that input the data (determined by the User Token used to authenticate). This will be enforced by RIoT so does not need to be set by the client and will be overwritten if it is set incorrectly.</p>
+</li>
+</ul>
+<h3 id="data-types">Data Types</h3>
+<p>All data types have a timestamp (ms epoch) and one or more values. On input if the timestamp is not set (i.e. is 0), it will be set at the timestamp the server receives the message. Output data will have a timestamp for every message.</p>
+<h4 id="gnss-position-pos">GNSS Position (pos)</h4>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>TYpe</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>timestamp</td>
+<td>uint64</td>
+<td>Timestamp of the data (ms epoch)</td>
+</tr>
+<tr>
+<td>latitude</td>
+<td>double</td>
+<td>WGS 84 latitude</td>
+</tr>
+<tr>
+<td>longitude</td>
+<td>double</td>
+<td>WGS 84 longitude</td>
+</tr>
+<tr>
+<td>altitude</td>
+<td>double</td>
+<td>WGS 84 altitude (ellipsoid)</td>
+</tr>
+<tr>
+<td>fields</td>
+<td>uint32</td>
+<td>Bit map of the valid fields.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Fields Map:</strong></p>
+<p>Describes which values in the GNSS Position message are valid as a bitfield. The bits are:</p>
+<table>
+<thead>
+<tr>
+<th>7</th>
+<th>6</th>
+<th>5</th>
+<th>4</th>
+<th>3</th>
+<th>2</th>
+<th>1</th>
+<th>0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>Reserved</td>
+<td>Altitude</td>
+<td>Longitude</td>
+<td>Latitude</td>
+</tr>
+</tbody>
+</table>
+<p>Note: Whilst the bitfield allows any combination of latitude, longitude and altitude all message must have both a valid latitude and valid longitude. Only altitude is optional. i.e. Valid options are 3 and 7.</p>
+<h4 id="other">Other</h4>
+<p>For more datatypes see <a href="https://github.com/igtimi/go-igtimi/blob/main/proto/com/igtimi/IgtimiData.proto">IgtimiData.proto</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Firmware%20Updates/" class="btn btn-neutral float-left" title="Firmware Updates"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Deprecated%20articles/Automatic%20magnetic%20inclination/" class="btn btn-neutral float-right" title="Automatic magnetic inclination">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/igtimi/docs" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="../Firmware%20Updates/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Deprecated%20articles/Automatic%20magnetic%20inclination/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
